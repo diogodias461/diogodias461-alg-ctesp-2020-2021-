@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+//alinha 1
+const countries = ["Portugal","Espanha","Inglaterra","Angola","França"]
+   console.log(countries.length)
+
+//alinha 2
+const newLength = countries.push('Itália');
+console.log(countries)
+
+//alinha 3
+countries[3] = "Ingla"
+const posi = countries.indexOf("Inglaterra")
+const contries = countries.splice(posi , 3)
+console.log(countries)
+
+//alinha 4
+/*const pos = countries.indexOf("Angola")
+const countries = countries.splice(pos , 4)
+console.log(countries)*/
+
+
+//alinha 5
+console.log(countries)
+
+//ex c
+
+const numbers = [4, 5, 12, -3, 34]
+/*
+let sun = 0;
+for(let i = 0; 1<numbers.length; i++){
+    sum = sum + numbers[i]
+}*/
+let min = numbers[0]
+let max = numbers[0]
+for(let i = 0; i<numbers.length; i++){
+    if(numbers[i]<min) {
+        min = numbers[i]
+    }
+    if(numbers[i]>max){
+        max = numbers[i]
+    }
+}
+console.log(min)
+console.log(max)
+
+// ... = operador spread , separar todos os elementos de um array
+min = Math.max(...numbers)
+max= Math.min(...numbers)
+//....
+
+let limiteinf = +prompt("Insira o primeiro numero")
+let limitemax = +prompt("Insira outro numero")
+let temp = 0;
+let count = 0;
+if(limiteinf> limitemax){
+    temp = limitemax
+    limitemax= limiteinf
+    limiteinf = temp
+}
+
+for(let i = 0; i <numbers.length; i++){
+    if(numbers[i] > limiteinf && numbers[i]< limitemax){
+        count++
+    }
+}
+console.log(count);
+
+//ex d
+const lugares = [0 , 0 , 1, 0 , 1, 0 , 0 , 1 , 1 , 1]
+
+
+let pos
+do {
+    pos = +prompt("Insira um lugar no qual gstaria de estacionar de 1 a 10")
+    if (lugares[pos - 1] == 0){
+        lugares[pos -1] = 1
+        alert("Lugar livre")
+    }else{
+        alert("Lugar ocupado, tente outro lugar")
+    }
+} while (lugares.indexOf(0) != 1);
+
+    
+
+  </script>
+</body>
+</html>
