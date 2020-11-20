@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YES</title>
+</head>
+<body>
+    <h1 class="red">Saudações</h1>
+<p id="p1">Olá Mundo</p>
+<p id="p2" class="red">Olá Portugal</p>
+<p id="p3">Olá Vila do Conde</p>
+<div>Olha uma div</div>
+<div>Olha uma segunda div com um
+<span>primeiro span</span>
+</div>
+<span>Olha um segundo span</span>
+
+<script>
+    const el = document.querySelector("#p2")
+    //const el = document.getElementById("p2")
+    console.log(el);
+   //const ps = document.getElementsByTagName("p")
+    const ps = document.querySelectorAll ('p')
+    for(let i = 0; i< ps.length; i++){
+        console.log(ps[i].innerHTML);
+    }
+    console.log(ps);
+
+
+//e
+
+const verm =document.getElementsByClassName("red")
+console.log(verm)
+    
+
+
+
+
+</script>
+</body>
+</html>
