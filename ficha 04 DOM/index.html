@@ -30,10 +30,43 @@
 
 //e
 
-const verm =document.getElementsByClassName("red")
-console.log(verm)
-    
+/*const verm =document.getElementsByClassName("red")
+//const verm = document.querySelectorAll('.red')
+for (const elem of verm) {
+    console.log(elem);
+}
+console.log(verm);*/
+//f
+const p =document.getElementsByClassName('p#p3');
+console.log(p);
 
+//g
+console.log("-------------------------------------------")
+const elementos = document.querySelectorAll('p,div')
+for (const elem of elementos) {
+    console.log(elem.innerHTML);
+}
+
+//h
+console.log("-------------------------------------------")
+const spans = document.querySelectorAll('span')
+for (const elem of spans) {
+    console.log(elem.innerHTML);
+}
+//i
+console.log("-------------------------------------------")
+const spandiv = document.querySelectorAll('span,div')
+for (const elem of spandiv) {
+    console.log(elem.innerHTML);
+}
+
+//j
+
+console.log("-------------------------------------------")
+const spanbody = document.querySelectorAll('body>span')
+for (const elem of spanbody) {
+    console.log(elem.innerHTML);
+}
 
 
 

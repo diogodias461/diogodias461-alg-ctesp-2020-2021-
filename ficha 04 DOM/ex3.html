@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ex3</title>
+</head>
+<body>
+     <table>
+        <tr>
+        <th>escola</th>
+        <th>local</th>
+        </tr>
+        <tr>
+        <td>ESMAD</td>
+        <td>Vila do Conde</td>
+        </tr>
+        </table>  
+        <script>
+
+            //b
+            /* const table =`
+            <tr>
+        <th>escola</th>
+        <th>local</th>
+        </tr>
+        <tr>
+        <td>ESMAD</td>
+        <td>Vila do Conde</td>
+        </tr>
+        </table>
+            `
+
+           const body = document.querySelector('body')
+            body.innerHTML = table; */
+
+//c
+        const table = document.querySelector('table')
+        table.innerHTML = `<tr><td>IseP</td><td>Porto</td></tr>`;
+//d
+const td = document.querySelector('td:last-of-type')
+td.innerHTML = 'Vila do Conde/ Povoa de Varzim'
+
+
+
+        </script>
+</body>
+</html>
